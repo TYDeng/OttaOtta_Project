@@ -23,3 +23,4 @@ npm start
 2. Video page(by click video in the homepage)
 3. user page sidebar (by click upload or account image in home page)
 
+that is
