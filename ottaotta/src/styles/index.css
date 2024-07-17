@@ -1,0 +1,19 @@
+/* src/index.css */
+
+/* A larger container for lining up the videos */
+.container-xxxl {
+    max-width: 1700px; /* Adjust this width as needed */
+    padding-right: var(--bs-gutter-x, 1.5rem);
+    padding-left: var(--bs-gutter-x, 1.5rem);
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media only screen and (min-width: 2560px) {
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 40px;
+    }
+  }
+  
