@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/OttaOtta_Project/static/css/main.019eccb6.css",
+    "main.js": "/OttaOtta_Project/static/js/main.1c0627ef.js",
+    "static/js/453.fc3853b9.chunk.js": "/OttaOtta_Project/static/js/453.fc3853b9.chunk.js",
+    "static/media/UserImage.png": "/OttaOtta_Project/static/media/UserImage.04b987823cc6785d23fe.png",
+    "static/media/bootstrap-icons.woff?": "/OttaOtta_Project/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/OttaOtta_Project/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "static/media/video1.webp": "/OttaOtta_Project/static/media/video1.8b622dcf587658117dc1.webp",
+    "static/media/home.jpg": "/OttaOtta_Project/static/media/home.7989c047f04946a5fb17.jpg",
+    "static/media/destiny2.png": "/OttaOtta_Project/static/media/destiny2.b4eb9e8ed2ce59ad8875.png",
+    "index.html": "/OttaOtta_Project/index.html",
+    "main.019eccb6.css.map": "/OttaOtta_Project/static/css/main.019eccb6.css.map",
+    "main.1c0627ef.js.map": "/OttaOtta_Project/static/js/main.1c0627ef.js.map",
+    "453.fc3853b9.chunk.js.map": "/OttaOtta_Project/static/js/453.fc3853b9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.019eccb6.css",
+    "static/js/main.1c0627ef.js"
+  ]
+}
