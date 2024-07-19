@@ -16,9 +16,10 @@ function UploadVideo() {
   const { file, onDragOver, onDrop, setFile } = useDragAndDrop();
   const [iconColor, setIconColor] = useState('grey');
   const [showTooltip, setShowTooltip] = useState(false);
-
+  
+  //steps
   const steps = ['Select Video', 'Fill video detail', 'Confirm Upload'];
-
+  
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
   };
@@ -173,7 +174,9 @@ function UploadVideo() {
           By submitting your videos to OttaOtta, you acknowledge that you agree to OttaOtta's
           <br></br> 
           <a href="#" className="text-decoration-none">Terms of Service</a> and 
-          <a href="#" className="text-decoration-none">Community Guidelines</a>. Please be sure not to violate others' copyright or privacy rights.
+          <a href="#" className="text-decoration-none">Community Guidelines</a>.
+          <br></br>  
+          Please be sure not to violate others' copyright or privacy rights.
         </p>
       </footer>
     </div>

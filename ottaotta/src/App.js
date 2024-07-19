@@ -2,9 +2,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 //import Navbar from './components/Navbar';
-import HomePage from './HomePage';
-import VideoPage from './components/VideoPage';
-import UserPage from './UserPage';
+import HomePage from './components/Pages/HomePage';
+import VideoPage from './components/Pages/VideoPage';
+import UserPage from './components/Pages/UserPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/index.css';
 import './App.css';
