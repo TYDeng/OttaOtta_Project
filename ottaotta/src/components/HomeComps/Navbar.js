@@ -44,8 +44,8 @@ function Navbar() {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link fs-5 me-4" to="/messages">
-                  <i class="bi bi-chat-square-dots-fill" style={{ fontSize: '1.5rem' }} title = "Collection/Playlist">
+                <NavLink className="nav-link fs-5 me-4" to="/account/user?tab=Message">
+                  <i class="bi bi-chat-square-dots-fill" style={{ fontSize: '1.5rem' }} title = "Message">
                     <span class="position-absolute top-10 start-25 translate-middle p-1 bg-danger border border-light rounded-circle">
                       <span class="visually-hidden"></span>
                     </span>
@@ -58,7 +58,7 @@ function Navbar() {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link fs-5 me-4" to="/collection" title='Playlist'>
+                <NavLink className="nav-link fs-5 me-4" to="/account/user?tab=Playlist" title='Playlist'>
                   <i class="bi bi-collection-play-fill" style={{ fontSize: '1.5rem' }}></i>
                 </NavLink>
               </li>
