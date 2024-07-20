@@ -37,11 +37,28 @@ function UploadVideo() {
     setIconColor((prev) => (prev === 'grey' ? 'blue' : 'grey'));
   };
 
+  const [showHelpText, setShowHelpText] = useState(false);
+  const toggleHelpText = () => setShowHelpText(!showHelpText);
+
   return (
     <div className="col-10">
       <header className="d-flex justify-content-between align-items-center pt-5 mb-4">
-        <h1>Upload Video</h1>
-      </header>
+          <div className="d-flex align-items-center">
+            <h1 className="me-3">Upload</h1>
+            <i
+              className="bi bi-question-circle-fill"
+              style={{ fontSize: '1.75rem', cursor: 'pointer' }}
+              onMouseOver={(e) => (e.currentTarget.style.color = '#0d6efd')}
+              onMouseOut={(e) => (e.currentTarget.style.color = 'black')}
+              onClick={toggleHelpText}
+            ></i>
+          </div>
+        </header>
+        {showHelpText && (
+          <div className="alert alert-info" role="alert">
+            This is upload section, you can upload videos by following steps there.
+          </div>
+        )}
 
       <Stepper activeStep={activeStep} alternativeLabel>
         {steps.map((label) => (
@@ -67,7 +84,10 @@ function UploadVideo() {
                   <div className="mb-3">
                     <div className="upload-drop-zone" onDragOver={onDragOver} onDrop={onDrop} style={{ height: '500px' }}>
                       {/* QA */}
-                      <i className="bi bi-info-circle" style={{ position: 'absolute', top: '10px', right: '10px', fontSize: '24px', color: iconColor, cursor: 'pointer' }} onClick={toggleTooltip}></i>
+                      <i className="bi bi-question-circle-fill" style={{ position: 'absolute', top: '10px', right: '10px', fontSize: '30px', color: iconColor, cursor: 'pointer' }} 
+                        onMouseOver={(e) => (e.currentTarget.style.color = '#0d6efd')}
+                        onMouseOut={(e) => (e.currentTarget.style.color = 'black')}
+                        onClick={toggleTooltip}></i>
                       <Tooltip text="Drag and drop your video here or click to upload" visible={showTooltip} />
 
                       <i class="bi bi-upload text-muted" style={{ fontSize: '200px' }}></i>
@@ -129,7 +149,7 @@ function UploadVideo() {
                         />
                       </div>
                       <div className="mb-3">
-                        <label htmlFor="publish-date" className="form-label">Publish Date and Time: </label>
+                        <label htmlFor="publish-date" className="form-label me-1">Publish Date and Time: </label>
                         <DatePicker
                           selected={startDate}
                           onChange={(date) => setStartDate(date)}
@@ -158,7 +178,7 @@ function UploadVideo() {
                     variant="contained"
                     color="primary"
                     onClick={handleNext}
-                    disabled={activeStep === 0 && !file}
+                    // disabled={activeStep === 0 && !file}
                   >
                     {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
                   </Button>
