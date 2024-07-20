@@ -11,7 +11,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router basename="/OttaOttaVideoSharingWeb">
+    <Router basename="/OttaOtta_Project">
       <div className="App">
         <Routes>
           {/* Home page */}
