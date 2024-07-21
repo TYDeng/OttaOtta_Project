@@ -6,6 +6,7 @@ import ContentSection from '../HomeComps/HomeContent';
 import videoData from '../../datas/videoData';
 import HeaderImage from '../HomeComps/HeaderImage';
 
+
 const HomePage = () => {
   const [filter, setFilter] = useState('ALL');
   const [sortOrder, setSortOrder] = useState('Hottest');

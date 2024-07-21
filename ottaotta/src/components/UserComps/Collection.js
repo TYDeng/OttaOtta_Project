@@ -71,7 +71,7 @@ function Collection() {
       </header>
       {showHelpText && (
         <div className="alert alert-info" role="alert">
-          You can add and edit your Collection here.
+          You can add and edit your Collection here. Click the collection title for details.
         </div>
       )}
 

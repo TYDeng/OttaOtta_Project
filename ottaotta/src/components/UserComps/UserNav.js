@@ -38,15 +38,15 @@ const UserNav = () => {
             {/* Right side: toolkit for notices */}
             <ul className="navbar-nav d-flex align-items-center">
               <li className="nav-item">
-                <NavLink className="nav-link fs-5 me-4" to="/help"><i class="bi bi-question-circle-fill" style={{ fontSize: '1.5rem' }}></i></NavLink>
+                <NavLink className="nav-link fs-5 me-4" to="/user/help"><i class="bi bi-question-circle-fill" style={{ fontSize: '1.5rem' }}></i></NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link fs-5 me-4" to="/settings"><i class="bi bi-gear-fill" style={{ fontSize: '1.5rem' }}></i></NavLink>
+                <NavLink className="nav-link fs-5 me-4" to="/user/settings"><i class="bi bi-gear-fill" style={{ fontSize: '1.5rem' }}></i></NavLink>
               </li>
             </ul>
-            {/* <Link to="/user" className="nav-link p-0 me-1" title="user">
+            <Link to="/account/user" className="nav-link p-0 me-1" title="user channel">
               <img src={user} alt="User" width="35" height="35" />
-            </Link> */}
+            </Link> 
           </div>
         </div>
       </div>

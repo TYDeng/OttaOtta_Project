@@ -72,7 +72,7 @@ function Playlist() {
       </header>
       {showHelpText && (
         <div className="alert alert-info" role="alert">
-          You can add and edit your playlist here.
+          You can add and edit your playlist here. Click playlist title for details.
         </div>
       )}
 

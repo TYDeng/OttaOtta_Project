@@ -8,6 +8,9 @@ import UserPage from './components/Pages/UserPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/index.css';
 import './App.css';
+import './components/i18n';
+import Help from './components/UserComps/Help';
+import Setting from './components/Setting';
 
 function App() {
   return (
@@ -23,6 +26,11 @@ function App() {
           {/* userPage */}
           <Route path="/account/user" element={<UserPage />} />
           
+          {/* HelpPage */}
+          <Route path="/user/help" element={<Help />} />
+
+          {/* Setting page */}
+          <Route path="/user/settings" element={<Setting />} />
           {/* Other routes can be added here */}
         </Routes>
       </div>

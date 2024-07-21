@@ -8,6 +8,10 @@ import Playlist from '../UserComps/Playlist';
 import Home from '../UserComps/Home';
 
 import userImg from '../../assets/user.png';
+import MyVideo from '../UserComps/MyVideo';
+import Analytics from '../UserComps/Analytics';
+import Messages from '../UserComps/Messages';
+import History from '../UserComps/History';
 
 
 const UserPage = () => {
@@ -36,10 +40,14 @@ const UserPage = () => {
         return <Collection />;
       case 'Playlist':
         return <Playlist />;
-      // case 'analytics':
-      //   return <Analytics />;
-      // case 'messages':
-      //   return <Messages />;
+      case 'My Videos':
+        return <MyVideo />;
+      case 'Analytics':
+        return <Analytics />;
+      case 'Messages':
+        return <Messages />;
+      case 'History':
+        return <History />;
       // // Add other cases for additional tabs
     }
   };
