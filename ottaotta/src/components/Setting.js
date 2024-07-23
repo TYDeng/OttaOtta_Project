@@ -36,22 +36,22 @@ const Settings = () => {
             <div className="container-xxl">
                 <h1>Settings</h1>
                 <div className="card text-start">
-                    <div className="card-header fs-2">
+                    <div className="card-header fs-2 bg-primary text-light">
                         Parental Controls
                     </div>
                     <div className="card-body">
-                        <h5 className="card-title">Special title treatment</h5>
+                        <h5 className="card-title">Click toggle for open/close parental control</h5>
                         <p className="card-text">To toggle parental control mode, please confirm with your password.</p>
                         <div className="form-check form-switch">
                             <input
                                 className="form-check-input"
                                 type="checkbox"
-                                id="parentalControlSwitch"
+                                id="flexSwitchCheckChecked"
                                 checked={isParentalControlEnabled}
                                 onClick={handleToggleModal}  // Show modal on click
                                 readOnly  // Prevent default toggle behavior
                             />
-                            <label className="form-check-label ms-3" htmlFor="parentalControlSwitch">
+                            <label className="form-check-label ms-3" for="flexSwitchCheckChecked">
                                 Parental control mode
                             </label>
                         </div>
